@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1536100445 source:c:\users\user\desktop\espacio de trabajo\facultad utn\programacion i\tps\calculadora\calculadoracuatro\bibliotecados.c
+
+1536101072 source:c:\users\user\desktop\espacio de trabajo\facultad utn\programacion i\tps\calculadora\calculadoracuatro\main.c
+	<stdio.h>
+	<stdlib.h>
+	"bibliotecaDos.h"
+	"bibliotecaDos.c"
+
+1536100367 c:\users\user\desktop\espacio de trabajo\facultad utn\programacion i\tps\calculadora\calculadoracuatro\bibliotecados.h
+
+1536100445 c:\users\user\desktop\espacio de trabajo\facultad utn\programacion i\tps\calculadora\calculadoracuatro\bibliotecados.c
+
