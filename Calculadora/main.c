@@ -19,12 +19,12 @@ int main()
 
     do
     {
-
-        printf("|   1.Ingrese el primer operando (A=%f)   |\n",numeroUno);
-        printf("|   2.Ingrese el segunro operando (B=%f)  |\n",numeroDos);
-        printf("|   3.Calcular todas las operaciones      |\n");
-        printf("|   4.Informar resultados                 |\n");
-        printf("|   5.Salir.                              |\n");
+        system("color f0");
+        printf("|   1.Ingrese el primer operando (A=%.2f)   |\n",numeroUno);
+        printf("|   2.Ingrese el segunro operando (B=%.2f)  |\n",numeroDos);
+        printf("|   3.Calcular todas las operaciones        |\n");
+        printf("|   4.Informar resultados                   |\n");
+        printf("|   5.Salir.                                |\n");
 
         scanf("%d", &opcion);
 
@@ -41,12 +41,12 @@ int main()
 
         case 3:
             system("cls");
-            printf("|   Calculando la suma... ( %f + %f )          |\n",numeroUno , numeroDos);
-            printf("|   Calculando la resta... ( %f - %f )         |\n",numeroUno , numeroDos);
-            printf("|   Calculando la multiplicacion... ( %f * %f) |\n",numeroUno , numeroDos);
-            printf("|   Calculando la division... ( %f / %f )      |\n",numeroUno , numeroDos);
-            printf("|   Calculando factorial... (!%f)              |\n",numeroUno);
-            printf("|   Calculando factorial... (!%f)              |\n",numeroDos);
+            printf("|   Calculando la suma... ( %.2f + %.2f )          |\n",numeroUno , numeroDos);
+            printf("|   Calculando la resta... ( %.2f - %.2f )         |\n",numeroUno , numeroDos);
+            printf("|   Calculando la multiplicacion... ( %.2f * %.2f) |\n",numeroUno , numeroDos);
+            printf("|   Calculando la division... ( %.2f / %.2f )      |\n",numeroUno , numeroDos);
+            printf("|   Calculando factorial... (!%.2f)              |\n",numeroUno);
+            printf("|   Calculando factorial... (!%.2f)              |\n",numeroDos);
             printf("\n");
 
             system("pause");
@@ -57,17 +57,17 @@ int main()
             system("cls");
 
             printf("|     Sus resultados son:       |\n");
-            printf("Sus operandos son A=%f y B=%f \n", numeroUno , numeroDos);
-            printf("La suma es de: %f\n", sumar( numeroUno , numeroDos ));
-            printf("La resta es de: %f\n", restar ( numeroUno , numeroDos ));
-            printf("La multiplicacion es de: %f \n", multiplicar( numeroUno , numeroDos ));
+            printf("Sus operandos son A=%.2f y B=%.2f \n", numeroUno , numeroDos);
+            printf("La suma es de: %.2f\n", sumar( numeroUno , numeroDos ));
+            printf("La resta es de: %.2f\n", restar ( numeroUno , numeroDos ));
+            printf("La multiplicacion es de: %.2f \n", multiplicar( numeroUno , numeroDos ));
 
             if( numeroDos == 0)
             {
                 printf("La division por cero no esta definida.\n");
             }else
             {
-                printf("La division es de: %f \n", dividir( numeroUno , numeroDos ));
+                printf("La division es de: %.2f \n", dividir( numeroUno , numeroDos ));
             }
 
 
@@ -76,7 +76,7 @@ int main()
                 printf("El factorial no existe en los negativos \n");
             }else
             {
-                 printf("El factorial del primer operando es: %f \n", factorizar(numeroUno));
+                 printf("El factorial del primer operando es: %.2f \n", factorizar(numeroUno));
             }
 
 
@@ -85,7 +85,7 @@ int main()
                printf("El factorial no esta definido en los negativos \n");
            }else
            {
-                printf("El factorial del segundo operando es: %f \n", factorizar(numeroDos));
+                printf("El factorial del segundo operando es: %.2f \n", factorizar(numeroDos));
            }
 
             system("pause");
